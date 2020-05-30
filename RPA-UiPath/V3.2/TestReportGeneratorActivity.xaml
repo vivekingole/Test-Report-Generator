@@ -1,0 +1,181 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TestReportGeneratorActivity" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="888.8,800.8" sap2010:WorkflowViewState.IdRef="TestReportGeneratorActivity_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sua="clr-namespace:Self.UiPathReporter.Activities;assembly=Self.UiPathReporter.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TestReportGeneratorActivity" sap:VirtualizedContainerService.HintSize="375.2,636" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Activity Test" sap:VirtualizedContainerService.HintSize="333.6,68.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ExpectedResult="{x:Null}" Description="To test we can directly use Step Status Activity without initializing report, Suite, Test. In such situation it will create default report, suite &amp; test." DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="375.2,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_1" Name="StepWithoutTest_Suite_Report" Status="Pass" TakeScreenshot="False" />
+      <sua:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="375.2,85.6" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestDescription="To test we can directly use Start Test activity without creating any report &amp; suite. In such case it will first check default report &amp; suite is created or not if not then it will create new one." TestName="TestWithoutSuite">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sua:StartTest>
+      <Sequence sap2010:Annotation.AnnotationText="To test Start Test Activity&#xD;&#xA;" DisplayName="Start Test Sequence" sap:VirtualizedContainerService.HintSize="375.2,2901.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <sua:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartSuite_1" SuiteName="StartTestActivityCheck" />
+        <sua:StartTest ContinueOnError="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_2" Priority="Medium" TagName="StartTestCheck" TestDescription="Test Will contain pass step, In that case Test also pass" TestName="WithPassStatus" />
+        <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ExpectedResult="{x:Null}" Description="To test if any step is passed then test is also pass." DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_2" Name="Pass Step" Status="Pass" TakeScreenshot="False">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </sua:StepStatus>
+        <sua:StartTest ContinueOnError="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_3" Priority="Medium" TagName="StartTestCheck" TestDescription="To test if any step is Failed then test is also fail." TestName="WithFailStatus" />
+        <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ExpectedResult="{x:Null}" Description="It will make test fail" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_3" Name="Fail Step" Status="Fail" TakeScreenshot="False">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </sua:StepStatus>
+        <sua:StartTest ContinueOnError="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_4" Priority="Medium" TagName="StartTestCheck" TestDescription="To test if any step is Skiped then test will fail." TestName="WithSkipStatus" />
+        <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ExpectedResult="{x:Null}" Description="Test will Fail" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_4" Name="Skip Step" Status="Skip" TakeScreenshot="False">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </sua:StepStatus>
+        <sua:StartTest ContinueOnError="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_5" Priority="Medium" TagName="StartTestCheck" TestDescription="To test if any step is Warning then test will Pass." TestName="WithWarningStatus" />
+        <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ExpectedResult="{x:Null}" Description="Test will Pass" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_5" Name="Warning" Status="Warning" TakeScreenshot="False">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </sua:StepStatus>
+        <sua:StartTest ContinueOnError="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_6" Priority="Medium" TagName="StartTestCheck" TestDescription="To test if any step is Exception then test will fail" TestName="WithExceptionStatus" />
+        <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ExpectedResult="{x:Null}" Description="Test will fail" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_6" Name="Exception step" Status="Exception" TakeScreenshot="False">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </sua:StepStatus>
+        <sua:StartTest ContinueOnError="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_7" Priority="Medium" TagName="StartTestCheck" TestDescription="To test if any step is Info then test will pass." TestName="WithInfotatus" />
+        <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ExpectedResult="{x:Null}" Description="Test will Pass" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_7" Name="Info" Status="Info" TakeScreenshot="False">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </sua:StepStatus>
+        <sua:StartTest ContinueOnError="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_8" Priority="Low" TagName="StartTestCheck" TestDescription="To test if can create test with no step, In such case bydefault test will pass" TestName="EmptyTest" />
+        <sua:StartTest ContinueOnError="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_9" Priority="Low" TagName="StartTestCheck" TestName="NullDescriptionTest" />
+        <sua:StartTest ContinueOnError="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_10" Priority="Low" TagName="StartTestCheck" TestDescription="To test we can create Low Priority Test" TestName="LowPriorityTest" />
+        <sua:StartTest ContinueOnError="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_11" Priority="Medium" TagName="StartTestCheck" TestDescription="To test we can create Medium Priority Test" TestName="MediumPriorityTest" />
+        <sua:StartTest ContinueOnError="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_12" Priority="High" TagName="StartTestCheck" TestDescription="To test we can create High Priority Test" TestName="HighPriorityTest" />
+        <sua:StartTest ContinueOnError="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_13" Priority="Critical" TagName="StartTestCheck" TestDescription="To test we can create Critical Priority Test" TestName="CriticalPriorityTest" />
+        <sua:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_14" Priority="Low" TestDescription="To test we can add Empty tags in test" TestName="EmptyTagTest" />
+      </Sequence>
+      <Sequence sap2010:Annotation.AnnotationText="To check Step Status Activity " DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="375.2,2253.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <sua:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartSuite_2" SuiteName="StepStatusActivityCheck" />
+        <sua:StartTest ContinueOnError="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_15" Priority="High" TagName="StepStatusCheck" TestDescription="To test Step Status Activity with multiple combinations" TestName="TestStepStatusActivity" />
+        <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ExpectedResult="{x:Null}" Description="To test screenshot is getting added" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_8" Name="TakeScreenshot Enable" Status="Pass" TakeScreenshot="True">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </sua:StepStatus>
+        <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ExpectedResult="{x:Null}" Description="To test screenshot is not added" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_9" Name="TakeScreenshot Disable" Status="Pass" TakeScreenshot="False">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </sua:StepStatus>
+        <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ExpectedResult="{x:Null}" Description="Pass Step" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_10" Name="Pass" Status="Pass" TakeScreenshot="False" />
+        <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ExpectedResult="{x:Null}" Description="Pass Step" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_11" Name="Fail" Status="Fail" TakeScreenshot="False" />
+        <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ExpectedResult="{x:Null}" Description="Skip Step" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_12" Name="Skip" Status="Skip" TakeScreenshot="False" />
+        <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ExpectedResult="{x:Null}" Description="Warning Step" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_13" Name="Warning" Status="Warning" TakeScreenshot="False" />
+        <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ExpectedResult="{x:Null}" Description="Exception Step" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_14" Name="Exception" Status="Exception" TakeScreenshot="False" />
+        <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ExpectedResult="{x:Null}" Description="Info Step" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_15" Name="Info" Status="Info" TakeScreenshot="False" />
+        <sua:StepStatus ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ActualResult="Pass" Description="Step With Actual &amp; Expected Result" DisplayName="Step Status" ExpectedResult="Pass" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_16" Name="ActualExpected" Status="Pass" TakeScreenshot="False" />
+        <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" Description="Step With Code Block" DisplayName="Step Status" ExceptionMessage="Code Block can be used to display coding messages \n&#xA; Generally you can use this feature to print exception or Warning messages.&#xA;" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_17" Name="CodeBlock" Status="Pass" TakeScreenshot="False" />
+        <sua:StepStatus ContinueOnError="{x:Null}" ActualResult="Pass" Description="Step With all possible features." DisplayName="Step Status" ExceptionMessage="Code Block can be used to display coding messages \n&#xA; Generally you can use this feature to print exception or Warning messages.&#xA;" ExpectedResult="Pass" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_18" Name="CompleteStep" Status="Pass" TakeScreenshot="True" />
+      </Sequence>
+    </Sequence>
+    <sua:CreateReport ContinueOnError="{x:Null}" DisplayName="Create Report" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="CreateReport_1" ReportLocation=".\\Reports" ReportName="MultiReport" />
+    <sua:StartTest ContinueOnError="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="StartTest_16" Priority="Low" TagName="TestTag" TestDescription="To test we can generate multiple reports for different mudules within single workflow" TestName="Multi Report Test" />
+    <sua:StepStatus ActualResult="{x:Null}" ContinueOnError="{x:Null}" ExceptionMessage="{x:Null}" ExpectedResult="{x:Null}" Description="Multi Report test" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="StepStatus_19" Name="Step1" Status="Pass" TakeScreenshot="True" />
+  </Sequence>
+</Activity>
